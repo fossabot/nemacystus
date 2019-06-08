@@ -25,9 +25,9 @@
     "build": "parcel build --no-source-maps src/index.html",
     "clean": "rimraf dist/*",
     "lint:fix": "yarn lint --fix",
-    "lint": "eslint src/** --ext .ts",
-    "prettier:format": "prettier --write \"./src/**/*.ts\"",
-    "prettier": "prettier --check \"./src/**/*.ts\"",
+    "lint": "eslint --ext .ts,tsx src",
+    "prettier:format": "prettier --write \"./src/**/*.{html,css,pcss,ts,tsx}\"",
+    "prettier": "prettier --check \"./src/**/*.{html,css,pcss,ts,tsx}\"",
     "gen-csstype": "tcm src"
   },
   "devDependencies": {
